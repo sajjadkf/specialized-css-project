@@ -1,0 +1,167 @@
+@font-face {
+    font-family: YekanBakh-Bold ;
+    src: url(./fonts/YekanBakh-Bold.woff);
+}
+@font-face {
+    font-family: YekanBakh-Heavy;
+    src: url(./fonts/YekanBakh-Heavy.woff);
+}
+@font-face {
+    font-family: YekanBakh-Medium ;
+    src: url(./fonts/YekanBakh-Medium.woff);
+
+}
+@font-face {
+    font-family: YekanBakh-Regular ;
+    src: url(./fonts/YekanBakh-Regular.woff);
+}
+
+/* reaset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* project */
+body{
+    font-family:YekanBakh-Regular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.5;
+}
+.cart{
+    width: 592px;
+    height: 424px;
+    background-image:url(./card.png);
+
+    overflow: hidden;
+    position: relative;
+
+}
+.cart:hover .cart_massage{
+    bottom: 0;
+}
+.cart:hover .icons{
+    top: 20px;
+    left: 20px;
+}
+
+.icons{
+     display: flex;
+     align-items: center;
+     gap:16px;
+    
+     position: absolute;
+     top: -50px;
+     left: 0px;
+     transition: all ease-in-out 200ms;
+
+}
+
+.icons_message{
+    width: 80px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+ 
+    border-radius: 50px;
+    color: #fff;
+    background-color: #1D2939 ;
+    
+}
+.icon{
+    stroke: #fff;
+    
+}
+.icons_heart{
+    width: 48px;
+    height:48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #C9184A;
+    color: #fff;
+    border-radius: 50px;
+
+}
+.cart_massage{
+    padding: 36px 24px 24px;
+    color: #fff;
+
+    position: absolute;
+    bottom: -142px;;
+    left: 0;
+    right: 0;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    transition: all ease-in-out 200ms;
+
+
+}
+.cart_titel{
+    font-family:YekanBakh-Bold ;
+    font-size: 24px;
+    margin-bottom:1rem ;
+
+}
+.cart_txt{
+    font-family:YekanBakh-Regular;
+    font-size: 20px;
+
+}
